@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Confidence Booster</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Daily Confidence Booster</h1>
+
+        <div id="setup-form">
+            <h2>Set Your Goal</h2>
+            <label for="goal">Choose Your Goal:</label>
+            <select id="goal">
+                <option value="communication">Improve Communication</option>
+                <option value="social">Reduce Social Anxiety</option>
+                <option value="confidence">Boost Confidence</option>
+            </select>
+            <button onclick="saveGoal()">Save Goal</button>
+        </div>
+
+        <div id="task-box" style="display: none;">
+            <h2>Your Daily Task:</h2>
+            <p id="task">Loading task...</p>
+            <button onclick="generateTask()">Get New Task</button>
+        </div>
+
+        <div id="affirmation-box" style="display: none;">
+            <h2>Today's Affirmation:</h2>
+            <p id="affirmation">Loading affirmation...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
